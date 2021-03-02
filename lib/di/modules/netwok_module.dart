@@ -77,7 +77,7 @@ class NetworkModule extends PreferenceModule {
   @provide
   @singleton
   PostApi providePostApi(DioClient dioClient, RestClient restClient) =>
-      PostApi(dioClient, restClient);
+      PostApi(dioClient);
 // Api Providers End:---------------------------------------------------------
 
 }

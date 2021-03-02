@@ -154,7 +154,7 @@ class _HomeScreenState extends State<HomeScreen> {
         maxLines: 1,
         overflow: TextOverflow.ellipsis,
         softWrap: false,
-        style: Theme.of(context).textTheme.title,
+        style: Theme.of(context).textTheme.headline6,
       ),
       subtitle: Text(
         '${_postStore.postList.posts[position].body}',

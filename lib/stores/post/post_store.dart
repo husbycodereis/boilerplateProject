@@ -32,6 +32,9 @@ abstract class _PostStore with Store {
   @observable
   bool success = false;
 
+  @observable
+  List todos;
+
   @computed
   bool get loading => fetchPostsFuture.status == FutureStatus.pending;
 
@@ -45,6 +48,15 @@ abstract class _PostStore with Store {
       this.postList = postList;
     }).catchError((error) {
       errorStore.errorMessage = DioErrorUtil.handleError(error);
+    });
+  }
+
+  @action
+  Future getTodos() async {
+    _repository.getTodos().then((todos) {
+      todos = todos;
+    }).catchError((e) {
+      errorStore.errorMessage = e.toString();
     });
   }
 }

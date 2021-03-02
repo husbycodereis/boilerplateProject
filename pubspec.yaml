@@ -64,6 +64,7 @@ dependencies:
       url: https://github.com/google/inject.dart.git
       path: package/inject
       ref: 7c3cbf6
+publish_to: none
 
 dev_dependencies:
   flutter_test:

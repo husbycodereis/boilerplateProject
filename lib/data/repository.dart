@@ -4,6 +4,7 @@ import 'package:boilerplate/data/local/datasources/post/post_datasource.dart';
 import 'package:boilerplate/data/sharedpref/shared_preference_helper.dart';
 import 'package:boilerplate/models/post/post.dart';
 import 'package:boilerplate/models/post/post_list.dart';
+import 'package:boilerplate/models/todos/todos.dart';
 import 'package:sembast/sembast.dart';
 
 import 'local/constants/db_constants.dart';
@@ -36,9 +37,14 @@ class Repository {
     }).catchError((error) => throw error);
   }
 
+  Future<List<Todos>> getTodos() async {
+    return await _postApi.getTodos().
+      catchError((error) => throw error);
+  }
+
   Future<List<Post>> findPostById(int id) {
     //creating filter
-    List<Filter> filters = List();
+    List<Filter> filters = List.empty();
 
     //check to see if dataLogsType is not null
     if (id != null) {

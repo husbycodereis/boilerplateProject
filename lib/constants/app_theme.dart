@@ -29,7 +29,7 @@ final ThemeData themeData = new ThemeData(
     fontFamily: FontFamily.productSans,
     brightness: Brightness.light,
     primarySwatch: MaterialColor(AppColors.orange[500].value, AppColors.orange),
-    primaryColor: AppColors.orange[500],
+    primaryColor: Colors.red,
     primaryColorBrightness: Brightness.light,
     accentColor: AppColors.orange[500],
     accentColorBrightness: Brightness.light
@@ -38,8 +38,8 @@ final ThemeData themeData = new ThemeData(
 final ThemeData themeDataDark = ThemeData(
   fontFamily: FontFamily.productSans,
   brightness: Brightness.dark,
-  primaryColor: AppColors.orange[500],
+  primaryColor: Colors.amber[800],
   primaryColorBrightness: Brightness.dark,
-  accentColor: AppColors.orange[500],
+  accentColor: Colors.red,
   accentColorBrightness: Brightness.dark,
 );
