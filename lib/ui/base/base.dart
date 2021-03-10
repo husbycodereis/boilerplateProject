@@ -35,7 +35,7 @@ class _BaseScreenState extends State<BaseScreen> {
             },
             icon: Icon(
               _themeStore.darkMode ? Icons.brightness_5 : Icons.brightness_3,
-              color: Theme.of(context).accentColor,
+              color: Theme.of(context).primaryColor,
             ),
           ),
         ],
