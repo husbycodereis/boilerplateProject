@@ -56,7 +56,8 @@ class _BaseScreenState extends State<BaseScreen> {
                   Icon(_todosStore.todosList[position].completed
                       ? Icons.check_circle
                       : Icons.check_circle_outline),
-                  Text('hello')
+                  Text('hello'),
+                  Text('adams'),
                 ],
               );
             },
