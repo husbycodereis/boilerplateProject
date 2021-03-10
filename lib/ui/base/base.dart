@@ -58,6 +58,7 @@ class _BaseScreenState extends State<BaseScreen> {
                       : Icons.check_circle_outline),
                   Text('hello'),
                   Text('adams'),
+                  Text('herro')
                 ],
               );
             },
